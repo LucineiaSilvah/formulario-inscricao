@@ -1,0 +1,56 @@
+.formulario{  
+  width: 90%;
+  padding: 0 1rem;
+
+}
+.formulario label{
+  color: rgb(36, 37, 59);
+  font-weight: bold;
+}
+.formulario input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 1rem 0;
+  border-radius: 5px;
+  text-indent: 10px;
+}
+.formulario  .success {
+  outline:none;
+  border: 1px solid #e88e7c;
+}
+.formulario button{
+  padding: 1rem;
+  color: #fff;
+  background:rgb(36, 37, 59);
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+
+}
+
+.erro{
+  color: red;
+  padding: 5px;
+ 
+
+}
+.formulario input.error{
+  border: 1px solid red;
+  background-color: #fae5df ;
+
+}
+.formulario  .sucesso{
+  background:  linear-gradient(to  left,  #FF683E, #FF5B64);
+}
+
+@media screen and (min-width:0) {
+  .formulario button{
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (min-width:768px) {
+  .formulario button{
+    width: initial;
+  }
+}

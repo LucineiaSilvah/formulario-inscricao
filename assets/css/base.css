@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+  padding:0;
+  position: relative;
+}
+@font-face {
+  font-family:Roboto-bold;
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-regular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+.container{
+  height: 100vh;
+  background-color: rgb(36, 37, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(36, 37, 59);
+ 
+}
+
+.conteudo{
+background-color: #fff;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+width: 60%;
+
+}
+.conteudo__info{
+
+  width: 100%;
+  margin: 2rem 0;
+  padding: calc(2rem - 10px);
+  font-family: "Roboto-regular";
+}
+.conteudo__imagem{
+  border-radius: 20px; 
+  
+}
+
+.container h1{
+  font-family: 'Roboto-bold';
+  text-align: center;
+}
+.container p {
+  align-items: center;
+  display: flex;
+
+  
+}
+.container p > img{
+  width: 25px;
+  padding: 10px;
+  
+}
+.attribution a{
+  color: #FF683E;
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media screen and (min-width:0) {
+
+  .conteudo{
+    width: 100%;
+    align-items: center ;
+    flex-direction: column-reverse;
+
+  }
+ .conteudo__imagem{
+    background:#FF5B64 url(/assets/images/illustration-sign-up-mobile.svg)no-repeat bottom / cover;
+    margin-top: 9rem ;
+    width:100vw;
+    height: 300px;
+
+
+  }
+  .conteudo__info{
+    width: 80%;
+    margin-right:2rem ;
+
+  }
+
+  .attribution{
+ 
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    color:  rgb(36, 37, 59);
+  }
+ 
+}
+@media screen and (min-width:768px) {
+  .container{
+    height: 100vh;
+    background-color: rgb(36, 37, 59);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+   
+  }
+  
+  .conteudo{
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+  min-width: 60%;
+  flex-direction: row;
+  max-width: 700px;
+  
+  }
+  .conteudo__info{
+  
+    width: 45%;
+    margin: 2rem 0;
+    padding: calc(2rem - 10px);
+    font-family: "Roboto-regular";
+  }
+  .conteudo__imagem{
+    background:#FF5B64 url(/assets/images/illustration-sign-up-desktop.svg)no-repeat center / cover;
+    margin-top: 0;
+    margin: 2rem ;
+    width: 45%;
+    height: auto;
+  }
+ 
+  .container h1{
+    font-family: 'Roboto-bold';
+    text-align: center;
+  }
+  .container p {
+    align-items: center;
+    display: flex;
+  
+    
+  }
+  .container p > img{
+    width: 25px;
+    padding: 10px;
+    
+  }
+  .attribution{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #fff;
+  }
+}

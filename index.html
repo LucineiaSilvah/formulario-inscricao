@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/formulario/formulario.css">
+  <link rel="stylesheet" href="/assets/css/modal.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="container">
+    <div class="modal">
+     <div class="modal__conteudo">
+      <img src="/assets/images/icon-success.svg" alt="">
+      <button class="fechar close"  >X</button>
+      <h1>Thanks for<br>
+        subscribing!</h1>
+      <p>A confirmation email has been sent to<br>
+     ash@loremcompany.com. Please open it and click <br>
+      the button inside to confirm your subscription.</p>
+      <button class="close">
+        Dismiss message
+      </button>
+     </div>
+    </div>
+  <main class="conteudo">
+    <div class="conteudo__info">
+      
+   <h1> Stay updated!</h1>
+
+  <p>
+    
+    <img src="/assets/images/icon-success.svg" alt="">
+    Join 60,000+ product managers receiving monthly updates on:</p>
+
+  <p>
+    <img src="/assets/images/icon-success.svg" alt="">
+    Product discovery and building what matters</p>
+ <p>
+  <img src="/assets/images/icon-success.svg" alt="">
+  Measuring to ensure updates are a success
+  And much more!
+</p>
+
+  
+
+ 
+      <form action="" class="formulario" id="form">
+        <label for="email">  Email address</label>
+        <input type="email" id="email" name="email"
+        placeholder="email@company.com" data-input>
+        <small class="erro" data-erro></small>
+     
+       <button 
+       type="submit"
+       data-btn
+       > Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="conteudo__imagem">
+      
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LucineiaSilvah" target="_blank">Lucineia Silva</a>.
+  </div>
+  </div>
+<script src="/assets/js/scrips.js"></script>
+</body>
+</html>
